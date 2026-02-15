@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/glhewett/repos/skills status)",
+      "Bash(file:*)",
+      "Bash(wc:*)",
+      "Bash(git init:*)"
+    ]
+  }
+}

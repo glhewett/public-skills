@@ -1,0 +1,30 @@
+[tasks.default]
+alias = "link"
+
+[tasks.link]
+description = "Symlink all skill directories to ~/.claude/skills/"
+script = '''
+#!/usr/bin/env bash
+mkdir -p ~/.claude/skills
+
+for dir in */; do
+  name="${dir%/}"
+  if [ -f "${name}/SKILL.md" ]; then
+    ln -sf "$(pwd)/${name}" ~/.claude/skills/${name}
+    echo "Linked: ${name}"
+  fi
+done
+'''
+
+[tasks.unlink]
+description = "Remove all skill symlinks from ~/.claude/skills/"
+script = '''
+#!/usr/bin/env bash
+for dir in */; do
+  name="${dir%/}"
+  if [ -L ~/.claude/skills/${name} ]; then
+    rm ~/.claude/skills/${name}
+    echo "Unlinked: ${name}"
+  fi
+done
+'''
