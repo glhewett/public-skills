@@ -14,8 +14,18 @@ The argument is the issue ID, e.g. `0001` or `1`. If the ID is not zero-padded, 
 4. Run `git config user.email` using the Bash tool to get the current user's email.
 5. Read the issue file using the Read tool.
 6. Update the `assigned_to` field in the TOML content to the git user's email. Use the Edit tool to replace the existing `assigned_to` line.
-7. Run `git add .issues/{id}.toml` using the Bash tool.
-8. Display the updated issue to the user, confirming the assignment.
+7. Append a `[[comments]]` entry to the end of the issue file using the Edit tool to log the assignment. Use the current date in `YYYY-MM-DD` format. Format:
+
+```toml
+
+[[comments]]
+author = "{email}"
+date = "{today}"
+message = "Assigned to {email}"
+```
+
+8. Run `git add .issues/{id}.toml` using the Bash tool.
+9. Display the updated issue to the user, confirming the assignment.
 
 ## Allowed tools
 

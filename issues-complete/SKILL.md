@@ -17,8 +17,19 @@ The argument is the issue ID, e.g. `0001` or `1`. If the ID is not zero-padded, 
    - Set `status = "complete"`
    - Set `closed = true`
    - Add `closed_comment = "{comment}"` after the `closed` field
-7. Run `git add .issues/{id}.toml` using the Bash tool.
-8. Confirm to the user that the issue has been completed.
+7. Run `git config user.email` using the Bash tool to get the current user's email.
+8. Append a `[[comments]]` entry to the end of the issue file using the Edit tool to log the completion. Use the current date in `YYYY-MM-DD` format. Format:
+
+```toml
+
+[[comments]]
+author = "{email}"
+date = "{today}"
+message = "Issue completed: {closing comment}"
+```
+
+9. Run `git add .issues/{id}.toml` using the Bash tool.
+10. Confirm to the user that the issue has been completed.
 
 ## Allowed tools
 

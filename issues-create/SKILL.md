@@ -33,6 +33,8 @@ created_at = "{today's date in YYYY-MM-DD format}"
 
 For the labels array, format each label as a quoted string, e.g. `labels = ["bug", "urgent"]`.
 
+Note: Issues support a `[[comments]]` array-of-tables section appended after the base fields. No comments are added at creation time.
+
 6. Run `git add .issues/{id}.toml` using the Bash tool.
 7. Display the created issue to the user, showing the ID and title.
 
