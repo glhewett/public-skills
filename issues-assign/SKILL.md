@@ -1,6 +1,6 @@
-# complete-issue
+# issues-assign
 
-Complete an issue by marking it as closed with a closing comment.
+Assign an issue to the current git user.
 
 ## Arguments
 
@@ -11,18 +11,15 @@ The argument is the issue ID, e.g. `0001` or `1`. If the ID is not zero-padded, 
 1. Parse the argument as an issue ID. Zero-pad it to 4 digits.
 2. Use the Glob tool to verify `.issues/{id}.toml` exists.
 3. If the file does not exist, inform the user and stop.
-4. Read the issue file using the Read tool and display all its fields to the user.
-5. Ask the user for a closing comment explaining why/how the issue was resolved.
-6. Update the issue file:
-   - Set `status = "complete"`
-   - Set `closed = true`
-   - Add `closed_comment = "{comment}"` after the `closed` field
+4. Run `git config user.email` using the Bash tool to get the current user's email.
+5. Read the issue file using the Read tool.
+6. Update the `assigned_to` field in the TOML content to the git user's email. Use the Edit tool to replace the existing `assigned_to` line.
 7. Run `git add .issues/{id}.toml` using the Bash tool.
-8. Confirm to the user that the issue has been completed.
+8. Display the updated issue to the user, confirming the assignment.
 
 ## Allowed tools
 
-- `Bash(git *)` - for git add
+- `Bash(git *)` - for git config and git add
 - `Read` - for reading the issue file
 - `Write` - for writing the updated issue file
 - `Glob` - for verifying the issue file exists

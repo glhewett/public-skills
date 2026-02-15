@@ -1,4 +1,4 @@
-# show-issue
+# issues-show
 
 Show the full details of a specific issue.
 

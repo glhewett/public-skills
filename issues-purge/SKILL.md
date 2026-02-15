@@ -1,4 +1,4 @@
-# purge-issues
+# issues-purge
 
 Remove all closed issues from the repository via `git rm` and commit.
 

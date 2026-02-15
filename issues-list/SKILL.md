@@ -1,4 +1,4 @@
-# list-issues
+# issues-list
 
 List all open issues in a concise table format.
 

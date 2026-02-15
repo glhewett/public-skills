@@ -1,4 +1,4 @@
-# create-issue
+# issues-create
 
 Create a new issue in the git-native issue tracker.
 
