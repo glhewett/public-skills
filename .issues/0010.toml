@@ -1,0 +1,9 @@
+id = "0010"
+title = "the issues-create skill should commit the new issue and push to remote (like issues-close)"
+description = ""
+labels = []
+priority = "medium"
+assigned_to = ""
+status = "open"
+closed = false
+created_at = "2026-02-15"
