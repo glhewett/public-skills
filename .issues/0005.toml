@@ -4,8 +4,9 @@ description = ""
 labels = []
 priority = "medium"
 assigned_to = ""
-status = "in_progress"
-closed = false
+status = "complete"
+closed = true
+closed_comment = "Added MIT LICENSE file"
 created_at = "2026-02-15"
 
 [[comments]]
@@ -19,3 +20,8 @@ Use MIT license
 author = "glh@strand3.com"
 date = "2026-02-15"
 message = "Started work on this issue"
+
+[[comments]]
+author = "glh@strand3.com"
+date = "2026-02-15"
+message = "Issue completed: Added MIT LICENSE file"
