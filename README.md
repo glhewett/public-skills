@@ -2,6 +2,17 @@
 
 A collection of reusable [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills for git workflows and issue tracking.
 
+## Issue Tracking
+
+This repo includes an experimental, minimalist issue tracker designed for small projects and solo contributors. All interaction happens through Claude Code skills — there is no separate UI or CLI.
+
+- **Creating** an issue adds a new `.toml` file in the `.issues/` directory and commits it to git.
+- **Starting** work on an issue sets it to in-progress, commits to main, and creates a feature branch based on the issue.
+- **Completing** an issue closes it with a comment.
+- **Purging** removes all closed issues from the repository.
+
+The issue skills are built on top of a small collection of git skills (`git-commit`, `git-feature-start`, `git-feature-complete`).
+
 ## Repo Structure
 
 Each skill lives in its own directory with a `SKILL.md` file:
@@ -28,6 +39,7 @@ Claude Code discovers skills by looking for `SKILL.md` files one level deep in a
 | `issues-list` | List issues |
 | `issues-purge` | Purge closed issues |
 | `issues-show` | Show issue details |
+| `issues-start` | Start work on an issue |
 
 ## Usage as a Git Submodule
 
@@ -67,33 +79,3 @@ To pull the latest skills into your project:
 git submodule update --remote .claude/skills
 git commit -m "Update skills submodule"
 ```
-
-## Public vs. Private Skills
-
-Claude Code discovers skills from two independent locations:
-
-- **Project-level**: `{repo}/.claude/skills/` — committed to the project, shared with collaborators
-- **User-level**: `~/.claude/skills/` — personal to the user, not committed to any repo
-
-This provides a natural public/private separation:
-
-- **Public skills** — Use this repo as a submodule at `.claude/skills/` in your projects. These skills are version-controlled and shared with anyone who clones the project.
-- **Private skills** — Place personal skills in `~/.claude/skills/`. These are only available to you and never appear in project repos.
-
-Both locations are active simultaneously, so you get the union of project-level and user-level skills in every session.
-
-## User-Level Installation
-
-To install all skills from this repo as user-level skills (available in all your projects):
-
-```bash
-makers link
-```
-
-This symlinks each skill directory into `~/.claude/skills/`. To remove the symlinks:
-
-```bash
-makers unlink
-```
-
-This approach requires [cargo-make](https://github.com/sagiegurari/cargo-make) (`makers` command).
