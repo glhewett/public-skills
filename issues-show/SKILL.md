@@ -35,5 +35,6 @@ If description is empty, omit the description section. If labels is empty, show 
 
 ## Allowed tools
 
+- `Bash(git *)` - for git commands
 - `Read` - for reading the issue file
 - `Glob` - for verifying the issue file exists

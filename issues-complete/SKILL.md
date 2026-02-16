@@ -16,7 +16,6 @@ The argument is the issue ID, e.g. `0001` or `1`. If the ID is not zero-padded, 
 6. Update the issue file:
    - Set `status = "complete"`
    - Set `closed = true`
-   - Add `closed_comment = "{comment}"` after the `closed` field
 7. Run `git config user.email` using the Bash tool to get the current user's email.
 8. Append a `[[comments]]` entry to the end of the issue file using the Edit tool to log the completion. Use the current date in `YYYY-MM-DD` format. Format:
 
@@ -30,6 +29,9 @@ message = "Issue completed: {closing comment}"
 
 9. Run `git add .issues/{id}.toml` using the Bash tool.
 10. Confirm to the user that the issue has been completed.
+11. Invoke `/git-commit` using the Skill tool to commit the changes.
+12. Invoke `/git-feature-complete` using the Skill tool to merge to the main branch.
+
 
 ## Allowed tools
 
@@ -37,3 +39,4 @@ message = "Issue completed: {closing comment}"
 - `Read` - for reading the issue file
 - `Write` - for writing the updated issue file
 - `Glob` - for verifying the issue file exists
+- `Skill(git-commit)` - for committing the changes

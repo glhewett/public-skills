@@ -27,5 +27,6 @@ Sort the issues by ID in ascending order.
 
 ## Allowed tools
 
+- `Bash(git *)` - for git commands
 - `Read` - for reading issue files
 - `Glob` - for finding issue files
