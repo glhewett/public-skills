@@ -1,0 +1,9 @@
+id = "0006"
+title = "create a skill to simply close an issue"
+description = ""
+labels = []
+priority = "medium"
+assigned_to = ""
+status = "open"
+closed = false
+created_at = "2026-02-15"
