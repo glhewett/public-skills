@@ -7,3 +7,13 @@ assigned_to = ""
 status = "open"
 closed = false
 created_at = "2026-02-15"
+
+[[comments]]
+author = "glh@strand3.com"
+date = "2026-02-15"
+message = """
+This can happen on any branch.
+It should update prompt for a reason to close.
+It should update the issue and commit to git with [skip-ci] tag
+Push to remote
+"""
