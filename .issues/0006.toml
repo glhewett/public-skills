@@ -4,8 +4,8 @@ description = ""
 labels = []
 priority = "medium"
 assigned_to = ""
-status = "in_progress"
-closed = false
+status = "closed"
+closed = true
 created_at = "2026-02-15"
 
 [[comments]]
@@ -22,3 +22,8 @@ Push to remote
 author = "glh@strand3.com"
 date = "2026-02-15"
 message = "Started work on this issue"
+
+[[comments]]
+author = "glh@strand3.com"
+date = "2026-02-15"
+message = "Issue closed: Completed"
