@@ -1,5 +1,5 @@
 ---
-name: git-feature
+name: git-feature-start
 description: Create a new feature branch from the main branch
 disable-model-invocation: true
 argument-hint: "[feature-name]"
