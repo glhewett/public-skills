@@ -1,3 +1,7 @@
+---
+disable-model-invocation: false
+---
+
 # issues-complete
 
 Complete an issue by marking it as closed with a closing comment.

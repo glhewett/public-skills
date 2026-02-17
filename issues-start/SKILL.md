@@ -1,3 +1,7 @@
+---
+disable-model-invocation: false
+---
+
 # issues-start
 
 Start working on an issue by updating its status, committing to main, creating a feature branch, and entering plan mode with the issue context.
