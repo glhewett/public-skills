@@ -6,8 +6,8 @@ Create a new issue in the git-native issue tracker.
 
 The argument string is parsed as follows:
 - If no flags are provided, the entire argument is used as the issue title.
-- Supported flags: `--title`, `--description`, `--labels` (comma-separated), `--priority` (low/medium/high), `--assigned-to`, `--status` (open/closed).
-- Defaults: description="", labels=[], priority="medium", assigned_to="", status="open", closed=false.
+- Supported flags: `--title`, `--priority` (low/medium/high), `--assigned-to`, `--status` (open/closed).
+- Defaults: priority="medium", assigned_to="", status="open", closed=false.
 
 ## Steps
 
@@ -22,16 +22,12 @@ The argument string is parsed as follows:
 ```toml
 id = "{id}"
 title = "{title}"
-description = "{description}"
-labels = [{labels}]
 priority = "{priority}"
 assigned_to = "{assigned_to}"
 status = "{status}"
 closed = false
 created_at = "{today's date in YYYY-MM-DD format}"
 ```
-
-For the labels array, format each label as a quoted string, e.g. `labels = ["bug", "urgent"]`.
 
 Note: Issues support a `[[comments]]` array-of-tables section appended after the base fields. No comments are added at creation time.
 

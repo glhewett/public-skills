@@ -1,5 +1,8 @@
 ---
+name: issues-start
+description: Start working on an issue
 disable-model-invocation: false
+allowed-tools: Bash(git *)
 ---
 
 # issues-start
@@ -16,8 +19,7 @@ The argument is the issue ID, e.g. `0001` or `1`. If the ID is not zero-padded, 
 2. Use the Glob tool to verify `.issues/{id}.toml` exists.
 3. If the file does not exist, inform the user and stop.
 4. Read the issue file using the Read tool and display all fields to the user.
-5. Verify the working tree is clean by running `git status --porcelain` using the Bash tool. If there is any output (dirty tree), list the uncommitted files and stop — tell the user to commit or stash first.
-6. Verify we are on the `main` branch by running `git branch --show-current` using the Bash tool. If the current branch is not `main`, inform the user and stop.
+5. If on the main branch, Verify the working tree is clean by running `git status --porcelain` using the Bash tool. If there is any output (dirty tree), list the uncommitted files and stop — tell the user to commit or stash first.
 7. Update the issue file: set `status = "in_progress"` using the Edit tool.
 8. Run `git config user.email` using the Bash tool to get the current user's email.
 9. Append a `[[comments]]` entry to the end of the issue file using the Edit tool to log that work has started. Use the current date in `YYYY-MM-DD` format. Format:
@@ -34,7 +36,7 @@ message = "Started work on this issue"
 11. Commit with message: `"Start issue {id}: {title} [skip-ci]"` using the Bash tool.
 12. Push to main: run `git push` using the Bash tool.
 13. Invoke `/git-feature-start issue-{id}` using the Skill tool to create the `feature/issue-{id}` branch.
-14. Enter plan mode using `EnterPlanMode`. In the plan context, include the issue's title, description, and all comments as the requirements to plan against.
+14. Enter plan mode using `EnterPlanMode`. In the plan context, include the issue's title and all comments as the requirements to plan against.
 
 ## Allowed tools
 

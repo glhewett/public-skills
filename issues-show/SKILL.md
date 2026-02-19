@@ -20,10 +20,7 @@ Issue {id}: {title}
 Status:      {status}
 Priority:    {priority}
 Assigned to: {assigned_to}
-Labels:      {labels}
 Created:     {created_at}
-
-{description}
 
 Comments:
 ──────────
@@ -31,7 +28,7 @@ Comments:
   Comment text here...
 ```
 
-If description is empty, omit the description section. If labels is empty, show "none". If assigned_to is empty, show "unassigned". If the issue has `[[comments]]` entries, render them at the bottom under a "Comments:" header. Each comment shows `[{date}] {author}:` followed by the message text indented with two spaces. If there are no comments, omit the Comments section entirely.
+If assigned_to is empty, show "unassigned". If the issue has `[[comments]]` entries, render them at the bottom under a "Comments:" header. Each comment shows `[{date}] {author}:` followed by the message text indented with two spaces. If there are no comments, omit the Comments section entirely.
 
 ## Allowed tools
 

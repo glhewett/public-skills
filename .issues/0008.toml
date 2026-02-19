@@ -1,7 +1,5 @@
 id = "0008"
 title = "add a skill that will list the issues assigned to me"
-description = ""
-labels = []
 priority = "medium"
 assigned_to = ""
 status = "open"

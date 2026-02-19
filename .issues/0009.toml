@@ -1,7 +1,5 @@
 id = "0009"
 title = "closed_comment should happen in the comments only"
-description = ""
-labels = []
 priority = "medium"
 assigned_to = ""
 status = "open"

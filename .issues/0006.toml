@@ -1,7 +1,5 @@
 id = "0006"
 title = "create a skill to simply close an issue"
-description = ""
-labels = []
 priority = "medium"
 assigned_to = ""
 status = "closed"

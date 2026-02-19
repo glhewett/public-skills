@@ -1,8 +1,6 @@
 # issues-plan
 
-Use the existing description and comments of an issue to create a plan and add the plan as a multi line comment.
-
-
+Use the existing title and comments of an issue to create a plan and add the plan as a multi line comment.
 
 ## Arguments
 
@@ -29,8 +27,9 @@ message = """
 """
 ```
 
-9. Run `git add .issues/{id}.toml` using the Bash tool.
-10. Display the added comment back to the user confirming it was saved.
+9. Change the status to "planned"
+10. Run `git add .issues/{id}.toml` using the Bash tool.
+11. Display the added comment back to the user confirming it was saved.
 
 ## Allowed tools
 
