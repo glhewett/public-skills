@@ -3,6 +3,7 @@ name: issues-plan
 description: Create a plan for an issue using its title and comments, and add it as a multi-line comment.
 disable-model-invocation: true
 argument-hint: "[issue-id]"
+allowed-tools: Bash(git *), Read, Edit, Glob
 ---
 
 ## Arguments

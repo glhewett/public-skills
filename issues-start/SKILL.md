@@ -3,6 +3,7 @@ name: issues-start
 description: Start working on an issue
 disable-model-invocation: true
 argument-hint: "[issue-id]"
+allowed-tools: Bash(git *), Read, Edit, Glob, Skill(git-feature-start), EnterPlanMode
 ---
 
 # issues-start

@@ -2,6 +2,7 @@
 name: git-commit-non-code
 description: Create a git commit for changes that are affecting code.
 argument-hint: "[push-commit]"
+allowed-tools: Bash(git *)
 ---
 
 Steps:

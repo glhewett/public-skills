@@ -2,6 +2,7 @@
 name: git-feature-complete
 description: Create a new feature branch from the main branch
 argument-hint: "[branch-name]"
+allowed-tools: Bash(git *)
 ---
 
 Completing the current feature will result in merge the feature branch into main and removing the feature branch.

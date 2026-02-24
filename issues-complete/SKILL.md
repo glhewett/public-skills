@@ -3,6 +3,7 @@ name: issues-complete
 description: Complete an issue by marking it as closed with a closing comment.
 disable-model-invocation: true
 argument-hint: "[issue-id]"
+allowed-tools: Bash(git *), Read, Edit, Write, Glob, Skill(git-commit), Skill(git-feature-complete)
 ---
 
 ## Arguments

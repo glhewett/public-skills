@@ -2,6 +2,7 @@
 name: issues-list
 description: List all open issues in a concise table format.
 disable-model-invocation: true
+allowed-tools: Read, Glob
 ---
 
 ## Arguments

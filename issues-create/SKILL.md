@@ -2,6 +2,7 @@
 name: issues-create
 description: Create a new issue in the git-native issue tracker.
 disable-model-invocation: true
+allowed-tools: Bash(git *), Read, Write, Glob
 ---
 
 # issues-create

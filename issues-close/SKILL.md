@@ -3,6 +3,7 @@ name: issues-close
 description: Close an issue by marking it as closed with a reason.
 disable-model-invocation: true
 argument-hint: "[issue-id]"
+allowed-tools: Bash(git *), Read, Edit, Glob
 ---
 
 ## Arguments

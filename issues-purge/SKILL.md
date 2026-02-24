@@ -2,6 +2,7 @@
 name: issues-purge
 description: Remove all closed issues from the repository via `git rm` and commit.
 disable-model-invocation: true
+allowed-tools: Bash(git *), Read, Glob
 ---
 
 # issues-purge

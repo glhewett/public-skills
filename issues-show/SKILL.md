@@ -3,6 +3,7 @@ name: issues-show
 description: Show the full details of a specific issue.
 disable-model-invocation: true
 argument-hint: "[issue-id]"
+allowed-tools: Read, Glob
 ---
 
 ## Arguments

@@ -2,6 +2,7 @@
 name: git-feature-start
 description: Create a new feature branch from the main branch
 argument-hint: "[feature-name]"
+allowed-tools: Bash(git *)
 ---
 
 Create a new feature branch named `feature/$ARGUMENTS` from the `main` branch.

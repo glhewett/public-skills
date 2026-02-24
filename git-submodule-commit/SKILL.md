@@ -2,6 +2,7 @@
 name: git-submodule-commit
 description: Commit changes in a submodule and update the parent repo reference
 argument-hint: "<submodule-path>"
+allowed-tools: Bash(git *), Read
 ---
 
 Steps:

@@ -2,6 +2,7 @@
 name: git-commit
 description: Create a git commit
 argument-hint: "[push-commit]"
+allowed-tools: Bash(git *)
 ---
 
 Steps:

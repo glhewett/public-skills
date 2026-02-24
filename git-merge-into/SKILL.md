@@ -2,6 +2,7 @@
 name: git-merge-into
 description: Merge feature branch into `$BRANCH` branch and push
 argument-hint: "[branch]"
+allowed-tools: Bash(git *)
 ---
 
 Merge all changes in the current branch to the `$BRANCH` branch and checkout the feature branch once pushed.

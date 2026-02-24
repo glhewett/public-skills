@@ -3,6 +3,7 @@ name: issues-comment
 description: Add a comment to an existing issue.
 disable-model-invocation: true
 argument-hint: "[issue-id]"
+allowed-tools: Bash(git *), Read, Edit, Glob
 ---
 
 ## Arguments
