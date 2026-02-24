@@ -1,10 +1,9 @@
 ---
-disable-model-invocation: false
+name: issues-complete
+description: Complete an issue by marking it as closed with a closing comment.
+disable-model-invocation: true
+argument-hint: "[issue-id]"
 ---
-
-# issues-complete
-
-Complete an issue by marking it as closed with a closing comment.
 
 ## Arguments
 
@@ -35,7 +34,6 @@ message = "Issue completed: {closing comment}"
 10. Confirm to the user that the issue has been completed.
 11. Invoke `/git-commit` using the Skill tool to commit the changes.
 12. Invoke `/git-feature-complete` using the Skill tool to merge to the main branch.
-
 
 ## Allowed tools
 

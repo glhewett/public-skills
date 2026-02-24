@@ -1,6 +1,8 @@
-# issues-list
-
-List all open issues in a concise table format.
+---
+name: issues-list
+description: List all open issues in a concise table format.
+disable-model-invocation: true
+---
 
 ## Arguments
 

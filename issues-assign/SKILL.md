@@ -1,6 +1,9 @@
-# issues-assign
-
-Assign an issue to the current git user.
+---
+name: issues-assign
+description: Assign an issue to the current git user.
+disable-model-invocation: true
+argument-hint: "[issue-id]"
+---
 
 ## Arguments
 

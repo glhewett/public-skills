@@ -1,6 +1,9 @@
-# issues-comment
-
-Add a comment to an existing issue.
+---
+name: issues-comment
+description: Add a comment to an existing issue.
+disable-model-invocation: true
+argument-hint: "[issue-id]"
+---
 
 ## Arguments
 

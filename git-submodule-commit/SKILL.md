@@ -1,12 +1,11 @@
 ---
 name: git-submodule-commit
 description: Commit changes in a submodule and update the parent repo reference
-disable-model-invocation: true
-allowed-tools: Bash(git *)
 argument-hint: "<submodule-path>"
 ---
 
 Steps:
+
 1. Parse `$ARGUMENTS` as the submodule path. If not provided, default to `.claude/skills`.
 2. Verify the path is a valid submodule by checking `.gitmodules`.
 3. Check for changes in the submodule (`git -C <path> status`). If clean, inform user and stop.

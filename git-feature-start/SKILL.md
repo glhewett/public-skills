@@ -1,14 +1,13 @@
 ---
 name: git-feature-start
 description: Create a new feature branch from the main branch
-disable-model-invocation: true
 argument-hint: "[feature-name]"
-allowed-tools: Bash(git *)
 ---
 
 Create a new feature branch named `feature/$ARGUMENTS` from the `main` branch.
 
 Steps:
+
 1. Ensure that $ARGUMENTS is provided. If not, print usage: `/git-feature <feature-name>` and exit.
 2. Ensure there are no uncommitted changes. If there are uncommitted files, list them and recommend committing or stashing them before continuing.
 3. Checkout the `main` branch (`git checkout main`).

@@ -1,3 +1,9 @@
+---
+name: issues-purge
+description: Remove all closed issues from the repository via `git rm` and commit.
+disable-model-invocation: true
+---
+
 # issues-purge
 
 Remove all closed issues from the repository via `git rm` and commit.

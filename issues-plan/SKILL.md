@@ -1,6 +1,9 @@
-# issues-plan
-
-Use the existing title and comments of an issue to create a plan and add the plan as a multi line comment.
+---
+name: issues-plan
+description: Create a plan for an issue using its title and comments, and add it as a multi-line comment.
+disable-model-invocation: true
+argument-hint: "[issue-id]"
+---
 
 ## Arguments
 
@@ -14,7 +17,7 @@ The argument is the issue ID, e.g. `0001` or `1`. If the ID is not zero-padded, 
 4. Read the issue file using the Read tool.
 5. Display the issue title and any existing comments so the user has context.
 6. Use the text to create a plan for how the work described in the issue could be done.
-7. The plan should be enough to save planning tokens in the future.  Concise but helpful.  Include and design decisions. and try to come up with a determination of the complexity of the change.
+7. The plan should be enough to save planning tokens in the future. Concise but helpful. Include and design decisions. and try to come up with a determination of the complexity of the change.
 8. Append a new `[[comments]]` entry to the end of the issue file using the Edit tool. Use the current date in `YYYY-MM-DD` format. Use a description of the claude agent as the author. Format:
 
 ```toml

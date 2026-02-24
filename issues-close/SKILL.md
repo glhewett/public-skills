@@ -1,10 +1,14 @@
-# issues-close
-
-Close an issue from any branch by marking it as closed with a reason.
+---
+name: issues-close
+description: Close an issue by marking it as closed with a reason.
+disable-model-invocation: true
+argument-hint: "[issue-id]"
+---
 
 ## Arguments
 
-The argument is the issue ID, e.g. `0001` or `1`. If the ID is not zero-padded, pad it to 4 digits (e.g. `1` becomes `0001`).
+s
+The argument is the isue ID, e.g. `0001` or `1`. If the ID is not zero-padded, pad it to 4 digits (e.g. `1` becomes `0001`).
 
 ## Steps
 
@@ -20,7 +24,6 @@ The argument is the issue ID, e.g. `0001` or `1`. If the ID is not zero-padded, 
 8. Append a `[[comments]]` entry to the end of the issue file using the Edit tool to log the closure. Use the current date in `YYYY-MM-DD` format. Format:
 
 ```toml
-
 [[comments]]
 author = "{email}"
 date = "{today}"

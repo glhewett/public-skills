@@ -1,3 +1,9 @@
+---
+name: issues-create
+description: Create a new issue in the git-native issue tracker.
+disable-model-invocation: true
+---
+
 # issues-create
 
 Create a new issue in the git-native issue tracker.
@@ -5,6 +11,7 @@ Create a new issue in the git-native issue tracker.
 ## Arguments
 
 The argument string is parsed as follows:
+
 - If no flags are provided, the entire argument is used as the issue title.
 - Supported flags: `--title`, `--priority` (low/medium/high), `--assigned-to`, `--status` (open/closed).
 - Defaults: priority="medium", assigned_to="", status="open", closed=false.
